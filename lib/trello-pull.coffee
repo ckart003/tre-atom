@@ -1,5 +1,11 @@
 {CompositeDisposable} = require 'atom'
-
+express = require('express')
+http = require('http')
+app = express()
+xhttp = require('XMLHttpRequest')
+Trello = require('node-trello')
+trello_config = require('./trello-config.json')
+t=new Trello(trello_config.key,trello_config.token)
 
 module.exports =
   subscriptions: null
@@ -13,4 +19,3 @@ module.exports =
     @subscriptions.dispose()
 
   pull: ->
- 

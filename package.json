@@ -3,8 +3,7 @@
   "main": "./lib/tre-atom",
   "version": "0.0.0",
   "description": "A short description of your package",
-  "keywords": [
-  ],
+  "keywords": [],
   "activationCommands": {
     "atom-workspace": "tre-atom:toggle"
   },
@@ -14,5 +13,7 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
+    "node-trello": "^1.1.2",
+    "jquery": "^3.1.0"
   }
 }
